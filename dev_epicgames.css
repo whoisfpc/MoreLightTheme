@@ -1,0 +1,205 @@
+/* ==UserStyle==
+@name           dev.epicgames.com/documentation/
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://dev.epicgames.com/documentation/") {
+	/* 全局背景和文字颜色 */
+	body,
+	html {
+		background-color: #f5f5f5 !important;
+		color: #333333 !important;
+	}
+
+	/* 所有文本元素的通用覆盖 */
+/* 	*, */
+	p,
+/* 	span, */
+	div,
+	li,
+	ul,
+	ol,
+	a,
+	strong,
+	em,
+	label,
+	input,
+	textarea,
+	button {
+		color: #333333 !important;
+	}
+	
+	.block-switch-info, .block-switch-control {
+		background-color: #e0e0e0 !important;
+	}
+
+	/* 主内容区域 */
+	.main-content,
+	.container,
+	.content-wrapper,
+	[class*="content"] {
+		background-color: #ffffff !important;
+		color: #333333 !important;
+	}
+
+	/* 导航栏 */
+	.navbar,
+	.header,
+	.top-nav,
+	[class*="nav"] {
+		background-color: #ffffff !important;
+		border-bottom: 1px solid #e0e0e0 !important;
+	}
+
+	.navbar a,
+	.header a,
+	.top-nav a,
+	[class*="nav"] a {
+		color: #005ea6 !important;
+	}
+
+	.navbar a:hover,
+	.header a:hover,
+	.top-nav a:hover,
+	[class*="nav"] a:hover {
+		color: #003087 !important;
+		background-color: #f0f0f0 !important;
+	}
+
+	/* 侧边栏 */
+	.sidebar,
+	.toc-container,
+	.sidebar-nav,
+	[class*="sidebar"],
+	[class*="toc"] {
+		background-color: #fafafa !important;
+		border-right: 1px solid #e0e0e0 !important;
+	}
+	
+	.text-secondary {
+    color: #222!important;
+	}
+
+	.sidebar a,
+	.toc-container a,
+	.sidebar-nav a,
+	[class*="sidebar"] a,
+	[class*="toc"] a {
+		color: #005ea6 !important;
+	}
+
+	.sidebar a:hover,
+	.toc-container a:hover,
+	.sidebar-nav a:hover,
+	[class*="sidebar"] a:hover,
+	[class*="toc"] a:hover {
+		background-color: #e6e6e6 !important;
+		color: #003087 !important;
+	}
+
+	/* 代码块 */
+	pre,
+	code,
+	.code-block,
+	[class*="code"] {
+		background-color: #f8f8f8 !important;
+		color: #333333 !important;
+/* 		border: 1px solid #d0d0d0 !important; */
+	}
+	
+	.hljs-ln-n {
+		background-color: #f8f8f8 !important;
+	}
+
+	/* 标题 */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #222222 !important;
+	}
+
+	/* 表格 */
+	table,
+	th,
+	td {
+		background-color: #ffffff !important;
+/* 		border: 1px solid #d0d0d0 !important; */
+		color: #333333 !important;
+	}
+
+	/* 按钮和交互元素 */
+	button,
+	.btn:not(.btn-expander),
+	.button {
+		background-color: #e0e0e0 !important;
+		color: #333333 !important;
+		border: 1px solid #b0b0b0 !important;
+	}
+
+	button:hover,
+	.btn:hover,
+	.button:hover {
+		background-color: #d0d0d0 !important;
+		color: #333333 !important;
+	}
+	
+	button.btn-expander {
+		background-color: rgba(0, 0, 0, 0) !important;
+		border: 0px !important;
+	}
+	
+	mark {
+		background-color: #d0d0d0 !important;
+		color: #333333 !important;
+	}
+
+
+	/* 搜索框 */
+	.search-bar,
+	.search-input,
+	[class*="search"] {
+		background-color: #ffffff !important;
+		border: 1px solid #d0d0d0 !important;
+		color: #333333 !important;
+	}
+
+	/* 搜索框占位符文字 */
+	input::placeholder,
+	textarea::placeholder {
+		color: #666666 !important;
+	}
+
+	/* 页脚 */
+	.footer,
+	.bottom-nav,
+	[class*="footer"] {
+		background-color: #ffffff !important;
+		color: #333333 !important;
+		border-top: 1px solid #e0e0e0 !important;
+	}
+
+	/* 覆盖任何可能的暗色主题 */
+	[class*="dark"],
+	[class*="theme-dark"],
+	[style*="background-color: rgb(0, 0, 0)"],
+	[style*="color: rgb(255, 255, 255)"] {
+		background-color: #ffffff !important;
+		color: #333333 !important;
+	}
+
+	/* 链接 */
+	a,
+	a:visited {
+		color: #005ea6 !important;
+	}
+
+	a:hover {
+		color: #003087 !important;
+		text-decoration: underline !important;
+	}
+}
