@@ -1,0 +1,136 @@
+/* ==UserStyle==
+@name           box2d.org/documentation/
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix(https://box2d.org/documentation/) {
+/* Minimal Light Theme Enhancement for Box2D Documentation */
+/* Subtle overrides for Sphinx/Read the Docs light theme: only colors, no layout changes. */
+/* Preserves all original margins, paddings, widths, and structures. */
+
+:root {
+    --light-bg: #ffffff;
+    --light-text: #333333;
+    --light-heading: #2c3e50;
+    --light-link: #2980b9;
+    --light-link-hover: #1f5f91;
+    --light-code-bg: #f8f9fa;
+    --light-code-border: #dee2e6;
+    --light-code-text: #e83e8c;
+    --light-admonition-bg: #fff3cd;
+    --light-admonition-border: #ffc107;
+    --light-admonition-text: #856404;
+    --light-sidebar-bg: #f8f9fa;
+}
+
+        #projectname {
+        color: #ecf0f1 !important;
+    }
+    
+    #projectnumber {
+        color: #ecf0f1 !important;
+    }
+    
+    #projectbrief {
+        color: #ecf0f1 !important;
+    }
+    
+    .doxtable>p {
+        color: #ecf0f1 !important;
+    }
+    
+    #nav-tree .selected {
+        background: #797c81 !important;
+    }
+    
+/* Body and Main Content - Colors only */
+body, .wy-body-for-nav {
+    background-color: var(--light-bg) !important;
+    color: var(--light-text) !important;
+}
+
+.rst-content {
+    background-color: var(--light-bg) !important;
+    color: var(--light-text) !important;
+}
+
+/* Headings - Color only */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--light-heading) !important;
+}
+
+/* Links - Color only */
+a {
+    color: var(--light-link) !important;
+}
+
+a:hover, a:focus {
+    color: var(--light-link-hover) !important;
+}
+
+/* Code and Pre Blocks - Light backgrounds */
+code {
+    background-color: var(--light-code-bg) !important;
+    border: 1px solid var(--light-code-border) !important;
+    color: var(--light-code-text) !important;
+}
+    
+    .memitem, .memtitle, .memItemLeft, .memItemRight, .mdescLeft,.mdescRight {
+        background-color: var(--light-code-bg) !important;
+    }
+    .fieldtable th {
+        background: var(--light-code-bg) !important;
+    }
+
+pre, .highlight {
+    background-color: var(--light-code-bg) !important;
+    border: 1px solid var(--light-code-border) !important;
+    color: var(--light-text) !important;
+}
+
+pre code {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+}
+
+/* Admonitions (Caution, Note, etc.) - Light yellow for cautions */
+.admonition, .admonition.caution, .admonition.warning {
+    background-color: var(--light-admonition-bg) !important;
+    border-left-color: var(--light-admonition-border) !important;
+}
+
+.admonition p, .admonition-title {
+    color: var(--light-admonition-text) !important;
+}
+
+/* Sidebar and Navigation - Light gray */
+.wy-nav-side {
+    background-color: var(--light-sidebar-bg) !important;
+}
+
+.wy-menu a {
+    color: var(--light-text) !important;
+}
+
+.wy-menu a:hover {
+    background-color: var(--light-bg) !important;
+    color: var(--light-link-hover) !important;
+}
+
+/* Search Box */
+.wy-search input[type="text"] {
+    background-color: var(--light-bg) !important;
+    color: var(--light-text) !important;
+}
+
+/* Horizontal Rules - Subtle */
+hr {
+    border-top-color: #dee2e6 !important;
+}
+
+/* No other changes: layout, fonts, sizes, paddings/margins untouched */
+}
